@@ -4,10 +4,89 @@
 <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fontawesome.com/v4.7.0/icons/" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <!-- TODO: Include all your code for the header and home page here -->
+<body class="index-body">
+<!-- TODO: Include all your code for the header and home page here -->
+<div class="headerclass">
+    <div>
+        <header>
+            ScriBBler
+        </header>
+        <h6>Explore, Imagine, Create</h6>
+    </div>
+    <div>
+        <button type="button" onclick="signUpButtonAction()" id="sign-up-button">Sign Up</button>
+        <button type="button" onclick="signInButtonAction()" id="sign-in-button">Sign In</button>
+    </div>
+</div>
+<div id="sign-up-modal" class="modal">
+    <div class="modal-content" id="sign-up-modal-content">
+        <span class="sign-up-close" onclick="signUpSpanClick()">&times;</span>
+        <h4>Get Started</h4>
+        <form id="signupform">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br>
+            <label>Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <br>
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter you password" required>
+            <br>
+            <label>Confirm Password</label>
+            <input type="password" id="confirmpassword" placeholder="Re-enter your password" required>
+            <br>
+            <button id="sign-up">Sign Up</button>
+        </form>
+    </div>
+
+</div>
+<div id="sign-in-modal" class="modal">
+    <div class="modal-content" id="sign-in-modal-content">
+        <span class="sign-in-close" onclick="signInSpanClick()">&times;</span>
+        <h4>Welcome Back!</h4>
+        <form id="signinform">
+            <label>Username</label>
+            <input type="text" placeholder="Enter your username" required>
+            <br>
+            <label>Password</label>
+            <input type="password" placeholder="Enter you password" required>
+            <br>
+            <button id="sign-in">Sign In</button>
+
+            <h5>Not a member?<a href="#" onclick="callSignUp(event)">Sign Up</a></h5>
+        </form>
+    </div>
+</div>
+<div>
+<div id="posts">
+    <button type="button"  id="all-posts-button" onclick="window.open('html/postslist.html')">All Posts</button>
+    <button type="button"  id="create-post-button" onclick="createPostButton()">Create Post</button>
+</div>
+<div class="modal" id="create-post-modal">
+    <div class="modal-content" id="create-post-modal-content">
+        <span class="create-post-close" onclick="createPostSpanClick()">&times;</span>
+        <h4>
+            Pen Your Post
+        </h4>
+        <form id="createPostForm">
+        <label>Title</label>
+        <br>
+        <input type="text" placeholder="Enter title of your post">
+        <br>
+        <label>Contents</label><br>
+            <textarea id="textarea" rows="15" columns="100" placeholder="Enter the contents of your post"></textarea>
+        <br><button type="button" id="createPostContentButton">Create</button></form>
+    </div>
+</div>
+    
+<script src="scripts/index.js"></script>
+
 </body>
 
 </html>
