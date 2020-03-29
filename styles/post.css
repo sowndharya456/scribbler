@@ -1,0 +1,71 @@
+#post-header{
+    text-align: center;
+    border: 2px transparent;
+    font-weight: bold;
+}
+
+#post-content{
+
+}
+main-post-body{
+
+}
+body{
+    position: relative;
+    border:1px transparent;
+    height: 100%;
+    width: 100%;
+}
+
+#editButton,#saveButton{
+    position: absolute;
+    right: 1%;
+    top: -22px;
+    background-color: red;
+    border: 50px transparent;
+
+}
+#post-author{
+    position: relative  ;
+}
+
+#view-post-container{
+    padding: 48px;
+    width: 95%;
+}
+
+#commenttext{
+width: 75%;
+    background-color: white;
+    border:1px solid;
+
+}
+
+#likeButton{
+    background-color: red;
+}
+
+#commentButton{
+    background-color: red;
+}
+
+#addComment{
+
+    width: 75%;
+    height: 20px;
+}
+#commentForm{
+    display:flex;
+    flex-direction: column;
+}
+.comments{
+    border: 4px solid lightgray;
+    margin: 0;
+}
+#saveButton{
+    display:none;
+}
+#likedButton{
+    display:none;
+    background-color: red;
+}

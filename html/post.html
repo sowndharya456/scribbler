@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="../styles/index.css" rel="stylesheet">
+    <link href="../styles/postslist.css" rel="stylesheet">
+    <link href="../styles/post.css" rel="stylesheet">
+
+</head>
+
+<body class="view-post-body">
+<!-- TODO: Include code for header here -->
+<div class="headerclass">
+    <div>
+        <header>
+            ScriBBler
+        </header>
+        <h6>Explore, Imagine, Create</h6>
+    </div>
+    <div>
+        <button type="button" onclick="signUpButtonAction()" id="sign-up-button">Sign Up</button>
+        <button type="button" onclick="signInButtonAction()" id="sign-in-button">Sign In</button>
+    </div>
+</div>
+<div id="sign-up-modal" class="modal">
+    <div class="modal-content" id="sign-up-modal-content">
+        <span class="sign-up-close" onclick="signUpSpanClick()">&times;</span>
+        <h4>Get Started</h4>
+        <form id="signupform">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br>
+            <label>Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <br>
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter you password" required>
+            <br>
+            <label>Confirm Password</label>
+            <input type="password" id="confirmpassword" placeholder="Re-enter your password" required>
+            <br>
+            <button id="sign-up">Sign Up</button>
+        </form>
+    </div>
+
+</div>
+<div id="sign-in-modal" class="modal">
+    <div class="modal-content" id="sign-in-modal-content">
+        <span class="sign-in-close" onclick="signInSpanClick()">&times;</span>
+        <h4>Welcome Back!</h4>
+        <form id="signinform">
+            <label>Username</label>
+            <input type="text" placeholder="Enter your username" required>
+            <br>
+            <label>Password</label>
+            <input type="password" placeholder="Enter you password" required>
+            <br>
+            <button id="sign-in">Sign In</button>
+
+            <h5>Not a member?<a href="#" onclick="callSignUp(event)">Sign Up</a></h5>
+        </form>
+    </div>
+</div>
+
+<div id="view-post-container">
+    <h4 id="post-header" >Everything you should know about 'module' & 'require' in Node.js</h4>
+    <div id="post-author">
+        <p>Srishti Gupta</p>
+        <span >
+            <button id="editButton" type="button" onclick="editContent()">Edit&nbsp;&nbsp;<i class="fa">&#xf044;</i></button>
+        <button id="saveButton" type="button" onclick="saveContent()">Save&nbsp;&nbsp;<i class="fa">&#xf0c7;</i></button>
+
+        </span>
+    </div>
+    <div id="post-content">
+        <p>Node.js treats each JavaScript file as a separate module. For instance, if you
+            have a file containing some code and this file is named xyz.js, then this file is treated as a module in
+            Node, and you can say that you've created a module
+            named xyz.
+        </p>
+    </div>
+
+    <div>
+        <form id="commentForm">
+            <button type="button" id="likeButton" value=Like onclick="likecount()"><i class="fa">&#Xf164;</i>&nbsp;&nbsp;Like</button>
+            <button type="button" id="likedButton" value=Like onclick="likecount()"><i class="fa">&#Xf164;</i>&nbsp;&nbsp;Liked!</button>
+
+            <div id="likestatus"></div>
+            <br>
+            <textarea id="commenttext" value="" placeholder="Leave a comment..." rows="5" ></textarea>
+            <br>
+            <button type="button" id="commentButton" onclick="addComment()">Comment</button>
+            <div>
+            <br>
+            <label>All Comments</label>
+            <br>
+            <div id="addComment">
+
+            </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+<script src="../scripts/index.js"></script>
+<script src="../scripts/postslist.js"></script>
+<script src="../scripts/post.js"></script>
+</body>
+</html>
