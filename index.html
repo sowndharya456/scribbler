@@ -64,28 +64,31 @@
     </div>
 </div>
 <div>
-<div id="posts">
-    <button type="button"  id="all-posts-button" onclick="window.open('html/postslist.html')">All Posts</button>
-    <button type="button"  id="create-post-button" onclick="createPostButton()">Create Post</button>
-</div>
-<div class="modal" id="create-post-modal">
-    <div class="modal-content" id="create-post-modal-content">
-        <span class="create-post-close" onclick="createPostSpanClick()">&times;</span>
-        <h4>
-            Pen Your Post
-        </h4>
-        <form id="createPostForm">
-        <label>Title</label>
-        <br>
-        <input type="text" placeholder="Enter title of your post">
-        <br>
-        <label>Contents</label><br>
-            <textarea id="textarea" rows="15" columns="100" placeholder="Enter the contents of your post"></textarea>
-        <br><button type="button" id="createPostContentButton">Create</button></form>
+    <div id="posts">
+        <button type="button" id="all-posts-button" onclick="window.open('html/postslist.html')">All Posts</button>
+        <button type="button" id="create-post-button" onclick="createPostButton()">Create Post</button>
     </div>
-</div>
-    
-<script src="scripts/index.js"></script>
+    <div class="modal" id="create-post-modal">
+        <div class="modal-content" id="create-post-modal-content">
+            <span class="create-post-close" onclick="createPostSpanClick()">&times;</span>
+            <h4>
+                Pen Your Post
+            </h4>
+            <form id="createPostForm">
+                <label>Title</label>
+                <br>
+                <input type="text" placeholder="Enter title of your post">
+                <br>
+                <label>Contents</label><br>
+                <textarea id="textarea" rows="15" columns="100"
+                          placeholder="Enter the contents of your post"></textarea>
+                <br>
+                <button type="button" id="createPostContentButton">Create</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
 
 </body>
 

@@ -5,13 +5,13 @@
     height: 70px
 }
 
-.index-body  {
+.index-body {
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
-    height:100%;
+    height: 100%;
     background-position: center;
     background-size: cover;
-    position:relative;
+    position: relative;
 }
 
 header {
@@ -20,7 +20,9 @@ header {
     color: blue
 }
 
-html, body {min-height: 100%;}
+html, body {
+    min-height: 100%;
+}
 
 h6 {
     font-family: 'Ubuntu Mono', monospace;
@@ -59,11 +61,10 @@ h6 {
     height: 400px;
     background-color: #fefefe;
 
-    box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
 
 
 }
-
 
 
 .sign-up-close, .sign-in-close {
@@ -116,14 +117,14 @@ input {
 }
 
 #sign-in-modal-content {
-    border: 0.5px ;
+    border: 0.5px;
     width: 25%;
     padding: 10px;
     text-align: center;
     height: 300px;
     background-color: #fefefe;
 
-    box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -148,26 +149,26 @@ input {
     padding-top: 20%;
 }
 
-button{
+button {
     background-color: orange;
     width: 100px;
     height: 35px;
     color: white;
     padding: 10px;
-    margin:5px;
+    margin: 5px;
 }
 
-#create-post-modal{
+#create-post-modal {
     display: none;
     z-index: 1;
     top: 37%;
     width: 60%;
     position: absolute;
-    box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
     left: 19%;
 }
 
-#create-post-modal-content{
+#create-post-modal-content {
     border: 0.5px;
     width: 100%;
     padding: 30px;
@@ -177,16 +178,16 @@ button{
     margin: 0.2px;
 }
 
-.create-post-close{
-float:right;
+.create-post-close {
+    float: right;
 }
 
-textarea{
-background-color: LightGray;
+textarea {
+    background-color: LightGray;
 }
 
-#createPostForm{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
+#createPostForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }

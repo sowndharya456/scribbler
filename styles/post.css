@@ -1,23 +1,25 @@
-#post-header{
+#post-header {
     text-align: center;
     border: 2px transparent;
     font-weight: bold;
 }
 
-#post-content{
+#post-content {
 
 }
-main-post-body{
+
+main-post-body {
 
 }
-body{
+
+body {
     position: relative;
-    border:1px transparent;
+    border: 1px transparent;
     height: 100%;
     width: 100%;
 }
 
-#editButton,#saveButton{
+#editButton, #saveButton {
     position: absolute;
     right: 1%;
     top: -22px;
@@ -25,47 +27,52 @@ body{
     border: 50px transparent;
 
 }
-#post-author{
-    position: relative  ;
+
+#post-author {
+    position: relative;
 }
 
-#view-post-container{
+#view-post-container {
     padding: 48px;
     width: 95%;
 }
 
-#commenttext{
-width: 75%;
+#commenttext {
+    width: 75%;
     background-color: white;
-    border:1px solid;
+    border: 1px solid;
 
 }
 
-#likeButton{
+#likeButton {
     background-color: red;
 }
 
-#commentButton{
+#commentButton {
     background-color: red;
 }
 
-#addComment{
+#addComment {
 
     width: 75%;
     height: 20px;
 }
-#commentForm{
-    display:flex;
+
+#commentForm {
+    display: flex;
     flex-direction: column;
 }
-.comments{
+
+.comments {
     border: 4px solid lightgray;
     margin: 0;
 }
-#saveButton{
-    display:none;
+
+#saveButton {
+    display: none;
 }
-#likedButton{
-    display:none;
+
+#likedButton {
+    display: none;
     background-color: red;
 }
