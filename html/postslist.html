@@ -4,8 +4,14 @@
 <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="../styles/index.css" rel="stylesheet">
+    <link href="../styles/postslist.css" rel="stylesheet">
+
 </head>
 
+<<<<<<< Updated upstream
 <body>
     <!-- TODO: Include code for header here -->
 
@@ -24,17 +30,98 @@
                 <div>
                     <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
                     <span>
+=======
+<body class="posts-body">
+<!-- TODO: Include code for header here -->
+<div class="headerclass">
+    <div>
+        <header>
+            ScriBBler
+        </header>
+        <h6>Explore, Imagine, Create</h6>
+    </div>
+    <div>
+        <button type="button" onclick="signUpButtonAction()" id="sign-up-button">Sign Up</button>
+        <button type="button" onclick="signInButtonAction()" id="sign-in-button">Sign In</button>
+    </div>
+</div>
+<div id="sign-up-modal" class="modal">
+    <div class="modal-content" id="sign-up-modal-content">
+        <span class="sign-up-close" onclick="signUpSpanClick()">&times;</span>
+        <h4>Get Started</h4>
+        <form id="signupform">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br>
+            <label>Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <br>
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter you password" required>
+            <br>
+            <label>Confirm Password</label>
+            <input type="password" id="confirmpassword" placeholder="Re-enter your password" required>
+            <br>
+            <button id="sign-up">Sign Up</button>
+        </form>
+    </div>
+
+</div>
+<div id="sign-in-modal" class="modal">
+    <div class="modal-content" id="sign-in-modal-content">
+        <span class="sign-in-close" onclick="signInSpanClick()">&times;</span>
+        <h4>Welcome Back!</h4>
+        <form id="signinform">
+            <label>Username</label>
+            <input type="text" placeholder="Enter your username" required>
+            <br>
+            <label>Password</label>
+            <input type="password" placeholder="Enter you password" required>
+            <br>
+            <button id="sign-in">Sign In</button>
+
+            <h5>Not a member?<a href="#" onclick="callSignUp(event)">Sign Up</a></h5>
+        </form>
+    </div>
+</div>
+<!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+
+<!-- list of all posts starts here -->
+<div id="posts-container">
+
+    <!-- post 1 starts here -->
+    <div class="post" id="post1">
+        <div class="post-author">
+            <p>Srishti Gupta</p>
+        </div>
+
+        <div class="post-content">
+            <div class="post-header">
+                <p>‘let’ me be a 'const'(ant), not a 'var'(iable)!</p>
+                <span class="trash-icon" onclick="deletePostWindow(post1)">
+>>>>>>> Stashed changes
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                       <i  class="fa">&#xf014;</i>
                     </span>
+<<<<<<< Updated upstream
                 </div>
                 <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
                 <span>
+=======
+            </div>
+            <p class="post-description">Since JavaScript does not have any type-checking, either of these keywords can
+                be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are
+                used for the same purpose, they are different.</p>
+            <span class="view-more" onclick="window.open('./post.html')">
+>>>>>>> Stashed changes
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i  class="fa">&#xf141;</i>
                 </span>
             </div>
         </div>
         <!-- post 1 ends here -->
 
+<<<<<<< Updated upstream
         <!-- post 2 starts here -->
         <div>
             <div>
@@ -45,17 +132,39 @@
                 <div>
                     <p>What is linting and how can it save you time?</p>
                     <span>
+=======
+    <!-- post 2 starts here -->
+    <div class="post" id="post2">
+        <div class="post-author">
+            <p>Colby Fayock</p>
+        </div>
+
+        <div class="post-content">
+            <div class="post-header">
+                <p>What is linting and how can it save you time?</p>
+                <span class="trash-icon" onclick="deletePostWindow(post2)">
+>>>>>>> Stashed changes
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa">&#xf014;</i>
                     </span>
+<<<<<<< Updated upstream
                 </div>
                 <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
                 <span>
+=======
+            </div>
+            <p class="post-description">One of the biggest challenges in software development is time. It's something we
+                can't easily get more of, but linting can help us make the most out of the time we have.</p>
+            <span class="view-more" onclick="window.open('./post.html')">
+>>>>>>> Stashed changes
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                 <i  class="fa">&#xf141;</i>
                 </span>
             </div>
         </div>
         <!-- post 2 ends here -->
 
+<<<<<<< Updated upstream
         <!-- post 3 starts here -->
         <div>
             <div>
@@ -66,17 +175,40 @@
                 <div>
                     <p>How to Get More Views on Your Tech Blog</p>
                     <span>
+=======
+    <!-- post 3 starts here -->
+    <div class="post" id="post3">
+        <div class="post-author">
+            <p>Yazeed Bzadough</p>
+        </div>
+
+        <div class="post-content">
+            <div class="post-header">
+                <p>How to Get More Views on Your Tech Blog</p>
+                <span class="trash-icon" onclick="deletePostWindow(post3)">
+>>>>>>> Stashed changes
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i  class="fa">&#xf014;</i>
                     </span>
+<<<<<<< Updated upstream
                 </div>
                 <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
                 <span>
+=======
+            </div>
+            <p class="post-description">If you're a developer with a Twitter account, you've already seen everyone and
+                their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least,
+                a recognizable name in the industry.</p>
+            <span class="view-more" onclick="window.open('./post.html')">
+>>>>>>> Stashed changes
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                     <i  class="fa">&#xf141;</i>
                 </span>
             </div>
         </div>
         <!-- post 3 ends here -->
 
+<<<<<<< Updated upstream
         <!-- post 4 starts here -->
         <div>
             <div>
@@ -87,18 +219,42 @@
                 <div>
                     <p>How to write easily describable code</p>
                     <span>
+=======
+    <!-- post 4 starts here -->
+    <div class="post" id="post4">
+        <div class="post-author">
+            <p>Cedd Burge</p>
+        </div>
+
+        <div class="post-content">
+            <div class="post-header">
+                <p>How to write easily describable code</p>
+                <span class="trash-icon" onclick="deletePostWindow(post4)">
+>>>>>>> Stashed changes
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa">&#xf014;</i>
                     </span>
+<<<<<<< Updated upstream
                 </div>
                 <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.</p>
                 <span>
+=======
+            </div>
+            <p class="post-description">When code is not describable using words, most people have to do some mental
+                mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping
+                wrong. Different people will map to different words, which
+                leads to confusion when discussing the code.</p>
+            <span class="view-more" onclick="window.open('./post.html')" >
+>>>>>>> Stashed changes
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa">&#xf141;</i>
                 </span>
             </div>
         </div>
         <!-- post 4 ends here -->
 
+<<<<<<< Updated upstream
         <!-- post 5 starts here -->
         <div>
             <div>
@@ -109,22 +265,69 @@
                 <div>
                     <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
                     <span>
+=======
+    <!-- post 5 starts here -->
+    <div class="post" id="post5">
+        <div class="post-author">
+            <p>Srishti Gupta</p>
+        </div>
+
+        <div class="post-content">
+            <div class="post-header">
+                <p>Everything you should know about 'module' & 'require' in Node.js</p>
+                <span class="trash-icon">
+>>>>>>> Stashed changes
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i  class="fa" onclick="deletePostWindow(post5)">&#xf014;</i>
                     </span>
+<<<<<<< Updated upstream
                 </div>
                 <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
                     named xyz.</p>
                 <span>
+=======
+            </div>
+            <p class="post-description">Node.js treats each JavaScript file as a separate module. For instance, if you
+                have a file containing some code and this file is named xyz.js, then this file is treated as a module in
+                Node, and you can say that you've created a module
+                named xyz.</p>
+            <span class="view-more" onclick="window.open('./post.html')">
+>>>>>>> Stashed changes
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                     <i class="fa">&#xf141;</i>
                 </span>
             </div>
         </div>
+<<<<<<< Updated upstream
         <!-- post 5 ends here -->
 
         <!-- TODO: Write code for delete post modal here -->
 
     </div>
     <!-- list of all posts ends here -->
+=======
+    </div>
+    <!-- post 5 ends here -->
+</div>
+    <!-- TODO: Write code for delete post modal here -->
+<div id="overlay"></div>
+    <div id="trash-modal" class="modal">
+        <div id="trash-modal-content" class="modal-content">
+
+            <label id="trash-alert">Are you sure you want to delete this post?</label>
+                <br>
+            <form id="trash-form">
+            <button type="button" id="deletePostButton" >Yes</button>
+            <button type="button" id="closeTrashButton" onclick="closeTrashWindow()">No</button>
+            </form>
+        </div>
+
+    </div>
+
+<!-- list of all posts ends here -->
+<script src="../scripts/index.js"></script>
+<script src="../scripts/postslist.js"></script>
+>>>>>>> Stashed changes
 </body>
 
 </html>
